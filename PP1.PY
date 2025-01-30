@@ -1,5 +1,5 @@
 def simple_atm():
-    balance = 1000  # Starting balance
+    balance = 1000 
 
     while True:
         print("\nATM Menu:")
@@ -8,10 +8,10 @@ def simple_atm():
         print("3. Withdraw Money")
         print("4. Exit")
        
-        # Get user input for menu choice
+
         choice = int(input("Enter your choice (1/2/3/4): "))
 
-        # Check the choice and perform actions
+        
         if choice == 1:
             print(f"Your balance is: ${balance}")
 
@@ -35,5 +35,5 @@ def simple_atm():
         else:
             print("Invalid choice, please try again.")
 
-# Run the simple ATM system
+
 simple_atm()
