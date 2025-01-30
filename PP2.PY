@@ -1,4 +1,4 @@
-# Function to display the menu
+
 def display_menu():
     print("\n--- Hotel Menu ---")
     print("1. Pizza - Rs.12")
@@ -7,7 +7,7 @@ def display_menu():
     print("4. Salad - Rs.6")
     print("5. Exit")
 
-# Function to take the user's order and calculate the total bill
+
 def take_order():
     menu = {
         1: {"name": "Pizza", "price": 12},
@@ -16,10 +16,10 @@ def take_order():
         4: {"name": "Salad", "price": 6}
     }
    
-    total_bill = 0  # Initialize total bill
+    total_bill = 0  
    
     while True:
-        display_menu()  # Show the menu
+        display_menu()  
         try:
             choice = int(input("Enter the item that you want to order (1-5): "))
            
@@ -39,10 +39,10 @@ def take_order():
         except ValueError:
             print("Please enter a valid number.")
 
-# Main function to run the Hotel Food Order program
+
 def hotel_food_order():
     print("Welcome to the Hotel Food Ordering System!")
     take_order()
 
-# Run the program
+
 hotel_food_order()
