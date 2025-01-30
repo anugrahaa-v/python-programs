@@ -1,4 +1,4 @@
-# Function to display the list of books
+
 def display_books(books):
     if books:
         print("\nList of Books:")
@@ -7,13 +7,13 @@ def display_books(books):
     else:
         print("No books available in the list.")
 
-# Function to add a book to the list
+
 def add_book(books):
     book_name = input("Enter the name of the book to add: ")
     books.append(book_name)
     print(f"Book '{book_name}' added to the list.")
 
-# Function to remove a book from the list
+
 def remove_book(books):
     book_name = input("Enter the name of the book to remove: ")
     if book_name in books:
@@ -22,21 +22,21 @@ def remove_book(books):
     else:
         print(f"Book '{book_name}' not found in the list.")
 
-# Function to sort the list of books
+
 def sort_books(books):
     books.sort()
     print("\nBooks sorted alphabetically.")
 
-# Function to reverse the list of books
+
 def reverse_books(books):
     books.reverse()
     print("\nBooks list has been reversed.")
 
-# Function to get the total number of books
+
 def get_total_books(books):
     return len(books)
 
-# Main function to run the Book Management System
+
 def book_management_system():
     books = []  # Initialize an empty list of books
 
@@ -72,5 +72,5 @@ def book_management_system():
         else:
             print("Invalid choice! Please select a valid option.")
 
-# Run the Book Management System
+
 book_management_system()
